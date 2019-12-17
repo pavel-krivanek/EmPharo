@@ -47,6 +47,11 @@
 # endif
 #endif
 
+#ifdef EMCC
+#define IMAGE_DIALECT_NAME "Pharo"
+#define DEFAULT_IMAGE_NAME "Pharo.image"
+#endif
+
 /* Pluggable primitives macros. */
 
 /* Note: All pluggable primitives are defined as
