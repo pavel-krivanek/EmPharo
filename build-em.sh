@@ -1,10 +1,7 @@
-#bash build.sh clang
-
 set -e
 
 COMPILER=emcc
-ARGS="-DEMCC=1 -DLSB_FIRST=1 -DDEBUG=0 -I. -c -w -s USE_PTHREADS=1 -s TOTAL_MEMORY=536870912 -pthread -Wl,--no-check-features -s PTHREAD_POOL_SIZE=2
- "
+ARGS="-DEMCC=1 -DLSB_FIRST=1 -DDEBUG=0 -I. -c -w -s USE_PTHREADS=1 -s TOTAL_MEMORY=536870912 -pthread -Wl,--no-check-features -s PTHREAD_POOL_SIZE=2"
 
 rm -rf ./build
 mkdir -p build
